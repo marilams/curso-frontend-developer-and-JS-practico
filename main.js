@@ -2,9 +2,10 @@ const userEmail = document.querySelector('#navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 const burguerMenu =document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const shoppingCartMenu = document.querySelector('.product-detail');
+const shoppingCartMenu = document.querySelector('.shopping-cart-menu');
 const shoppingCartIcon = document.querySelector('.navbar-shopping-cart');
 const cardContainer = document.querySelector('.cards-container');
+const productDetails = document.querySelector('.product-detail')
 
 function inactiveDesktopMenu(){
     desktopMenu.classList.toggle('inactive');
@@ -27,6 +28,8 @@ const shoppingCartBtn = () => {
 userEmail.addEventListener('click', inactiveDesktopMenu);
 burguerMenu.addEventListener('click', inactiveMobileMenu);
 shoppingCartIcon.addEventListener('click', shoppingCartBtn);
+
+
 
 const productList = [];
 
@@ -87,3 +90,4 @@ function productsView(arr){
 }
 
 productsView(productList);
+
